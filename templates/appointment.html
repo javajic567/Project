@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>appointment</title>
+</head>
+<body>
+<form method="post" action="{%url 'display'%}">
+  {%csrf_token%}
+  {{form.as_p}}
+  <input type="submit">
+</form>
+</body>
+</html>
